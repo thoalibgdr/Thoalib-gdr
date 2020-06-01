@@ -5418,12 +5418,11 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.24rem;
   line-height: inherit;
   white-space: nowrap;
-  margin-right: 2rem; }
-  .navbar-brand:hover, .navbar-brand:focus {
+}
+.navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
 .navbar-nav {
@@ -12220,3 +12219,58 @@ body:after {
     padding-top: 60px; } }
 
 /*# sourceMappingURL=style-starter.css.map */
+::-webkit-scrollbar{
+  width: .8em
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background: linear-gradient(transparent,#2b8424);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent,#17a2b8);
+}
+.mycard{
+  position: relative;
+  max-width: 100%;
+  height: 70%;
+  background: rgb(161, 161, 161);
+  margin: 30px 1px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(93, 93, 93, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.mycard:hover{
+  height: 95%;
+  
+}
+.mycard .imagebox{
+  position: relative;
+  width: 94%;
+  height: 123%;
+  top: -50px;
+  left: 12px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(146, 146, 146, 0.2);
+}
+.mycard .imagebox img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+.mycard .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 3px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.mycard:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -80px;
+  transition-delay: 0.3s;
+}
